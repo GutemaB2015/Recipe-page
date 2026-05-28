@@ -15,9 +15,6 @@
     font-weight: 400;
     font-style: normal;
     src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf');
-}
-
-@font-face {
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400 600 700;
@@ -50,7 +47,6 @@
     align-items: center;
     height:auto;
     width: auto;
-    display: flex;
     padding: 20px;
     display: block;
 }
@@ -60,14 +56,14 @@
     justify-content:center;
     box-sizing: border-box;
     margin: 40px auto;
-    width: 90%;
+    width:min(90%, 700px);
     margin: 30px auto;
 }
 
 .card{
     background-color: var(--White);
     border-radius: 45px;
-    padding: 50px;
+    padding: 2rem;
 }
 
 .image{
@@ -83,13 +79,18 @@
     border-radius: 20px;
 }
 
+.description{
+    color:rgba(0,0,0,.57);
+    font-size:1rem;
+}
+
 .simple-omelette{
     font-family: "Young Serif", serif;
 }
 
 .preparation-time ul li{
-    padding-left: 25PX;
-    margin-bottom: 15px;
+    margin-left:0;
+    padding:20px;
 }
 
 .preparation-time{
@@ -110,24 +111,24 @@ li::marker{
 
 h2{
     color: var(--Rose-800);
-    font-size: 40px;
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
     font-family: "Young Serif", serif;
 }
 
 .ingredients ul li{
     margin-bottom: 15px;
-    font-size: 25px;
+    font-size: 1rem;
     color: rgba(0, 0, 0, 0.623);
     padding-left: 25px;
 }
 
 h1{
-    font-size: 50px;
+    font-size: clamp(2rem, 5vw, 3rem);
 }
 
 .instructions ol li{
     margin-bottom: 15px;
-    font-size: 25px;
+    font-size: 1rem;
     color: rgba(0, 0, 0, 0.623);
     padding-left: 25px;
 }
